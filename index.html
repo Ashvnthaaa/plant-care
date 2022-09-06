@@ -5,17 +5,34 @@
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 		<title>Plant Care</title>
 	</head>
 	<body class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen">
-		<header>
-      <!-- title = subtitle -->
+    <!-- Title + subtitle -->
+		<header class="bg-lightgrey w-80 rounded-t-lg">
+      <div class="flex justify-around align-middle flex-col">
+        <p class="font-bold font-sans">My Yard</p>
+        <p class="font-thin">3 tasks for the day</p>
+      </div>
     </header>
-			<section class="my-yard-container">
-        <!-- 4 plant images and one add-button -->
+ <!-- 4 plant images and one add-button -->
+			<section id="my-yard-container" class="bg-lightgrey w-80">
+        <img src="assets/meat-eater-unsplash.jpg" class="w-1/3 h-1/3 rounded-full" alt="green plant in white pot">
+        <img src="assets/pilea-unsplash.jpg" class="w-1/3 h-1/3 rounded-full" alt="green plant in white pot">
+        <img src="assets/wannabe-palmtree-unsplash.jpg" class="w-1/2 h-1/2 rounded-full"  alt="green plant in white pot">
+        <img src="assets/xmas-tree-unsplash.jpg" class="w-2/3 h-2/3 rounded-full" alt="green tree in white pot">
+        <div id="button-add-plant" class="flex justify-around items-center bg-turtlegreen h-11 w-11 rounded-full mx-2">
+          <i class="fa-solid fa-plus text-white text-2xl"></i>
+        </div> 
+        
+        
+
         <!-- ==== testing other subsites ==== -->
-        <a href="plant-detail.html">test 1</a>
-        <a href="identify-plant.html">test 2</a>
+        <a href="plant-detail.html" class="text-lightsage">test 1</a>
+        <a href="identify-plant.html" class="text-lightsage">test 2</a>
+
 			<section id="my-task-container">
           <!-- flexbox:list of task -->
         </div>
