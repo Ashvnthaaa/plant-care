@@ -9,7 +9,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 		<title>Plant Care</title>
 	</head>
-	<body class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen">
+	<body class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen m-2">
     <!-- Title + subtitle -->
 		<header class="bg-lightgrey w-80 rounded-t-lg">
       <div class="flex justify-around align-middle flex-col">
@@ -17,30 +17,76 @@
         <p class="font-thin">3 tasks for the day</p>
       </div>
     </header>
- <!-- 4 plant images and one add-button -->
-			<section id="my-yard-container" class="bg-lightgrey w-80">
+      <!-- 4 plant images -->
+			<section id="my-yard-container" class="flex justify-around flex-wrap bg-lightgrey w-80">
         <img src="assets/meat-eater-unsplash.jpg" class="w-1/3 h-1/3 rounded-full" alt="green plant in white pot">
         <img src="assets/pilea-unsplash.jpg" class="w-1/3 h-1/3 rounded-full" alt="green plant in white pot">
         <img src="assets/wannabe-palmtree-unsplash.jpg" class="w-1/2 h-1/2 rounded-full"  alt="green plant in white pot">
         <img src="assets/xmas-tree-unsplash.jpg" class="w-2/3 h-2/3 rounded-full" alt="green tree in white pot">
-        <div id="button-add-plant" class="flex justify-around items-center bg-turtlegreen h-11 w-11 rounded-full mx-2">
-          <i class="fa-solid fa-plus text-white text-2xl"></i>
+        <!-- add plant button -->
+        <div id="button-add-plant" class="flex flex-col items-center">
+          <div class="flex justify-around items-center bg-turtlegreen h-11 w-11 rounded-full mx-2">
+            <i class="fa-solid fa-plus text-white text-2xl"></i>
+          </div> 
+          <div class="font-bold">Add Plant</div>
         </div> 
-        
-        
-
-        <!-- ==== testing other subsites ==== -->
-        <a href="plant-detail.html" class="text-lightsage">test 1</a>
-        <a href="identify-plant.html" class="text-lightsage">test 2</a>
-
-			<section id="my-task-container">
-          <!-- flexbox:list of task -->
+        <!-- card gallery: task area -->
+			<section id="my-task-container" class="bg-white w-80 rounded-t-lg">
+       <p class="font-bold font-sans">My Task</p>
+       <!-- card: first task watering -->
+       <div id="task-watering" class="flex justify-between align-middle m-1">
+        <div id="icon-task-watering" class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-xl">
+          <i class="fa-solid fa-faucet text-2xl"></i>
         </div>
+        <div id="title-task-watering">
+          <p class="font-bold">Watering</p>
+          <p class="font-thin">1 to 2 times per day</p>
+        </div>
+        <div id="check-task-watering">
+            <div class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-full mx-2">
+            <i class="fa-solid fa-check text-2xl"></i> 
+            </div>
+        </div>
+      </div>
+        <!-- card: second task inspection -->
+       <div id="task-inspection" class="flex justify-between align-middle m-1">
+        <div id="icon-task-inspection" class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-xl">
+          <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+        </div>
+        <div id="title-task-inspection">
+          <p class="font-bold">Inspection</p>
+          <p class="font-thin">1 to 2 times per week</p>
+        </div>
+        <div id="check-task-inspection">
+          <div class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-full mx-2">
+            <i class="fa-solid fa-check text-2xl"></i> 
+          </div>
+        </div>
+       </div>
+       <!-- card: third task repotting -->
+       <div id="task-repotting">
+        <div id="icon-task-repotting" class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-xl">
+        <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+        </div>
+          <div id="title-task-repotting">
+            <p class="font-bold">Repotting</p>
+            <p class="font-thin">1 to 2 times per year</p>
+        </div>
+        <div id="check-task-repotting">
+          <div class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-full mx-2">
+            <i class="fa-solid fa-check text-2xl"></i> 
+          </div>
+        </div>
+      </div>
+          <!-- flexbox:list of task -->
 		</section>
 		<footer>
       <!-- icon camera -->
       <!-- icon user -->
       <!-- icon home -->
+       <!-- ==== testing other subsites ==== -->
+       <a href="plant-detail.html" class="text-lightsage">test 1</a>
+       <a href="identify-plant.html" class="text-lightsage">test 2</a>
     </footer>
 		<script type="module" src="./src/main.ts"></script>
 	</body>
