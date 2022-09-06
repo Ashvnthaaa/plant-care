@@ -11,7 +11,7 @@
 	</head>
 	<body class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen m-2">
     <!-- Title + subtitle -->
-		<header class="bg-lightgrey w-80 rounded-t-lg">
+		<header class="bg-lightgrey w-80 rounded-t-3xl">
       <div class="flex justify-around align-middle flex-col">
         <p class="font-bold font-sans">My Yard</p>
         <p class="font-thin">3 tasks for the day</p>
@@ -30,11 +30,11 @@
           </div> 
           <div class="font-bold">Add Plant</div>
         </div> 
-        <!-- card gallery: task area -->
-			<section id="my-task-container" class="bg-white w-80 rounded-t-lg">
-       <p class="font-bold font-sans">My Task</p>
-       <!-- card: first task watering -->
-       <div id="task-watering" class="flex justify-between align-middle m-1">
+        <!-- card gallery: task area flexbox -->
+			<section id="my-task-container" class="bg-white w-80 rounded-t-3xl">
+        <p class="font-bold font-sans">My Task</p>
+        <!-- card: first task watering -->
+        <div id="task-watering" class="flex justify-between align-middle m-1">
         <div id="icon-task-watering" class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-xl">
           <i class="fa-solid fa-faucet text-2xl"></i>
         </div>
@@ -49,7 +49,7 @@
         </div>
       </div>
         <!-- card: second task inspection -->
-       <div id="task-inspection" class="flex justify-between align-middle m-1">
+      <div id="task-inspection" class="flex justify-between align-middle m-1">
         <div id="icon-task-inspection" class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-xl">
           <i class="fa-solid fa-magnifying-glass text-2xl"></i>
         </div>
@@ -62,23 +62,21 @@
             <i class="fa-solid fa-check text-2xl"></i> 
           </div>
         </div>
-       </div>
-       <!-- card: third task repotting -->
-       <div id="task-repotting">
-        <div id="icon-task-repotting" class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-xl">
-        <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+      </div>
+      <!-- card: third task seeding -->
+      <div id="task-seeding" class="flex justify-between align-middle m-1">
+        <div id="icon-task-seeding" class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-xl">
+        <i class="fa-solid fa-seedling text-2xl"></i>
         </div>
-          <div id="title-task-repotting">
-            <p class="font-bold">Repotting</p>
-            <p class="font-thin">1 to 2 times per year</p>
+        <div id="title-task-seeding">
+          <p class="font-bold">Seeding</p>
+          <p class="font-thin">1 to 2 times per year</p>
         </div>
-        <div id="check-task-repotting">
+        <div id="check-task-seeding">
           <div class="flex justify-around items-center bg-oceangreen h-11 w-11 rounded-full mx-2">
             <i class="fa-solid fa-check text-2xl"></i> 
-          </div>
         </div>
       </div>
-          <!-- flexbox:list of task -->
 		</section>
 		<footer>
       <!-- icon camera -->
