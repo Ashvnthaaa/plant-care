@@ -2,9 +2,13 @@ const autoprefixer = require("autoprefixer");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./src/**/*.{html,js}", "./index.html", "./.html"],
+	content: ["./src/**/*.{html,js}", "./index.html", "./*.html"],
 	theme: {
 		extend: {
+			backgroundImage: {
+				hero: "url('../public/pilea-hang-unsplash.jpg')",
+				plah: "url('../public/placeholder-150x150.png')",
+			},
 			colors: {
 				lightsage: "#78a5a6",
 				darksage: "#3f5e61",

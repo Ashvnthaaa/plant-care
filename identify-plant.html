@@ -5,21 +5,50 @@
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./src/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		/>
 		<title>Identify Plant</title>
 	</head>
-	<body class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen">
+	<body
+		class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen m-2 z-0"
+	>
+		<!-- back arrow + title -->
 		<header
-			class="w-96 rounded-t-full bg-no-repeat bg-cover bg-fixed"
-			style="background-image: url(assets/pilea-hang-unsplash.jpg)"
+			class="bg-hero w-96 h-screen flex-1 bg-cover bg-center bg-no-repeat rounded-t-3xl z-0"
 		>
-			<!-- back arrow + title -->
+			<div class="flex align-middle justify-center">
+				<div>
+					<i class="fa-solid fa-chevron-left text-xl"></i>
+				</div>
+				<div>
+					<p class="text-xmasgreen font-bold font-sans">Identify the Plant</p>
+				</div>
+			</div>
 		</header>
-		<section id="identify-plant-container">
-			<!-- <div>img-bg and camera-lens</div> -->
-		</section>
-		<section id="plant-detail-container">
-			<!-- title, textbox and button -->
+		<!-- title, textbox and button -->
+		<section
+			id="plant-identify-container"
+			class="absolute -mt-8 flex justify-around w-96 rounded-t-3xl bg-lightgrey h-auto z-10"
+		>
+			<div id="img-plant-identify" class="bg-plah w-20 h-32"></div>
+			<div id="textbox-plant-identify" class="flex justify-between flex-col">
+				<div id="title-plant-identify" class="font-bold font-sans text-2xl">
+					Peace Lily Plant
+				</div>
+				<div id="desc-plant-identify">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</div>
+				<div
+					id="btn-plant-identify"
+					class="flex justify-around items-center bg-xmasgreen w-11 h-8 rounded-full"
+				>
+					<i class="fa-solid fa-arrow-right text-white font-thin text-xl"></i>
+				</div>
+			</div>
 		</section>
 		<footer></footer>
+		<script type="module" src="./src/main.ts"></script>
 	</body>
 </html>
