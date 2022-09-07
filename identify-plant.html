@@ -15,8 +15,10 @@
 		class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen m-2 z-0"
 	>
 		<!-- back arrow + title -->
-		<header class="bg-lightgrey w-96 rounded-t-full h-auto z-10">
-			<div class="flex align-middle">
+		<header
+			class="bg-hero w-96 h-screen flex-1 bg-cover bg-center bg-no-repeat rounded-t-3xl z-0"
+		>
+			<div class="flex align-middle justify-center">
 				<div>
 					<i class="fa-solid fa-chevron-left text-xl"></i>
 				</div>
@@ -25,23 +27,24 @@
 				</div>
 			</div>
 		</header>
-		<!-- <section id="identify-plant-container" class="bg-lightgrey w-96 h-auto">
-			<div>img-bg and camera-lens</div>
-		</section> -->
 		<!-- title, textbox and button -->
-		<section id="plant-detail-container" class="w-96 bg-lightgrey h-auto z-10">
-			<div class="flex justify-between flex-col">
-				<div id="img-plant-detail" class="bg-black w-20 h-20"></div>
+		<section
+			id="plant-detail-container"
+			class="absolute -mt-8 flex justify-around w-96 rounded-t-3xl bg-lightgrey h-auto z-10"
+		>
+			<div id="img-plant-detail" class="bg-plah w-20 h-32"></div>
+			<div id="textbox-plant-detail" class="flex justify-between flex-col">
 				<div id="title-plant-detail" class="font-bold font-sans text-2xl">
 					Peace Lily Plant
 				</div>
 				<div id="desc-plant-detail">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</div>
-				<div id="btn-plant-detail" class="bg-xmasgreen w-14 h-11 rounded-full">
-					<i
-						class="fa-solid fa-arrow-right flex align-middle text-white text-xl"
-					></i>
+				<div
+					id="btn-plant-detail"
+					class="flex justify-around items-center bg-xmasgreen w-11 h-8 rounded-full"
+				>
+					<i class="fa-solid fa-arrow-right text-white font-thin text-xl"></i>
 				</div>
 			</div>
 		</section>
