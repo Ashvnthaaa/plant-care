@@ -14,38 +14,89 @@
 	<body class="bg-gradient-to-r from-darksage to-lightsage w-screen h-screen">
 		<!-- back arrow + lightbulb icon -->
 		<!-- bulb with pop-up window -->
-		<header
-			class="bg-lightgrey w-96 h-10 rounded-t-3xl flex items-center justify-between"
-		>
-			<div>
-				<i class="fa-solid fa-chevron-left text-xl"></i>
+		<header class="bg-lightgrey w-96 h-16 rounded-t-3xl">
+			<div class="flex items-center justify-between">
+				<div>
+					<i class="fa-solid fa-chevron-left text-xl"></i>
+				</div>
+				<div>
+					<i class="fa-solid fa-lightbulb text-xl text-turtlegreen"></i>
+				</div>
 			</div>
-			<div>
-				<i class="fa-solid fa-lightbulb text-xl text-turtlegreen"></i>
-			</div>
-			>
 		</header>
 		<section id="plant-data-container" class="bg-lightgrey w-96 h-auto">
 			<!-- plant img -->
 			<div>
-				<div id="plant img" class="bg-hero w-32 h-32 bg-contain rounded-br-3xl">
-					<div
-						id="humidity"
-						class="flex justify-around items-center bg-white bg-opacity-20 w-14 h-8 rounded-full"
-					>
+				<div
+					id="plant img"
+					class="w-5/6 bg-hero flex-1 bg-no-repeat bg-contain rounded-tr-3xl"
+				>
+					<div class="flex flex-col ml-20">
+						<!-- HUMIDITY -->
 						<div
-							class="flex justify-around items-center bg-white h-11 w-11 rounded-full mx-2"
+							id="humidity"
+							class="flex justify-around items-center bg-white bg-opacity-20 w-auto h-auto rounded-full border-solid border-black border-2"
 						>
-							<i class="fa-solid fa-camera text-xl text-xmasgreen"></i>
+							<div
+								class="flex justify-around items-center bg-white h-11 w-11 rounded-full mx-2"
+							>
+								<i class="fa-solid fa-droplet text-xl text-xmasgreen"></i>
+							</div>
+							<div class="flex flex-col">
+								<p class="text-xl text-xmasgreen">Humidity</p>
+								<p class="text-xl text-xmasgreen font-thin">64%</p>
+							</div>
 						</div>
-						<div class="flex flex-col">
-							<p class="text-xl text-xmasgreen">64%</p>
-							<p class="text-xl text-xmasgreen font-thin">Humidity</p>
+						<!-- HEIGHT -->
+						<div
+							id="height"
+							class="flex justify-around items-center bg-white bg-opacity-20 w-auto h-auto rounded-full border-solid border-black border-2"
+						>
+							<div
+								class="flex justify-around items-center bg-white h-11 w-11 rounded-full mx-2"
+							>
+								<i
+									class="fa-solid fa-arrows-up-down text-xl text-xmasgreen"
+								></i>
+							</div>
+							<div class="flex flex-col">
+								<p class="text-xl text-xmasgreen">Height</p>
+								<p class="text-xl text-xmasgreen font-thin">1.7m</p>
+							</div>
+						</div>
+						<!-- DIAMETER -->
+						<div
+							id="diameter"
+							class="flex justify-around items-center bg-white bg-opacity-20 w-auto h-auto rounded-full border-solid border-black border-2"
+						>
+							<div
+								class="flex justify-around items-center bg-white h-11 w-11 rounded-full mx-2"
+							>
+								<i
+									class="fa-solid fa-up-right-and-down-left-from-center text-xl text-xmasgreen"
+								></i>
+							</div>
+							<div class="flex flex-col">
+								<p class="text-xl text-xmasgreen">Diameter</p>
+								<p class="text-xl text-xmasgreen font-thin">0.6m</p>
+							</div>
+						</div>
+						<!-- SUN -->
+						<div
+							id="sunlight"
+							class="flex justify-around items-center bg-white bg-opacity-20 w-auto h-auto rounded-full border-solid border-black border-2"
+						>
+							<div
+								class="flex justify-around items-center bg-white h-11 w-11 rounded-full mx-2"
+							>
+								<i class="fa-solid fa-sun text-xl text-xmasgreen"></i>
+							</div>
+							<div class="flex flex-col">
+								<p class="text-xl text-xmasgreen">Sunlight</p>
+								<p class="text-xl text-xmasgreen font-thin">5.6k</p>
+							</div>
 						</div>
 					</div>
-					<div id="height"></div>
-					<div id="diameter"></div>
-					<div id="sunlight"></div>
 				</div>
 			</div>
 		</section>
@@ -53,16 +104,43 @@
 			id="plant-detail-container"
 			class="flex flex-col bg-lightgrey w-96 -h-auto"
 		>
+			<div id="title-plant-detail" class="font-bold text-xmasgreen text-xl">
+				Peace Lily Plant
+			</div>
 			<div
-				id="title-plant-detail"
-				class="text-xmasgreen font-bold text-xl"
-			></div>
-			<div id="hashtags-plant-detail" class="text-xmasgreen font-thin">
-				<div id="hash-1">Indoor</div>
-				<div id="hash-2">Garden</div>
-				<div id="hash-3">Office</div>
-				<div id="hash-4">Pet friendly</div>
-				<div id="hash-5">Air Purifier</div>
+				id="hashtags-plant-detail"
+				class="flex flex-wrap text-xmasgreen font-thin"
+			>
+				<div
+					id="hash-1"
+					class="flex justify-around items-center bg-white h-11 w-20 rounded-full mx-2"
+				>
+					Indoor
+				</div>
+				<div
+					id="hash-2"
+					class="flex justify-around items-center bg-white h-11 w-20 rounded-full mx-2"
+				>
+					Garden
+				</div>
+				<div
+					id="hash-3"
+					class="flex justify-around items-center bg-white h-11 w-20 rounded-full mx-2"
+				>
+					Office
+				</div>
+				<div
+					id="hash-4"
+					class="flex justify-around items-center bg-white h-11 w-20 rounded-full mx-2"
+				>
+					Pet friendly
+				</div>
+				<div
+					id="hash-5"
+					class="flex justify-around items-center bg-white h-11 w-20 rounded-full mx-2"
+				>
+					Air Purifier
+				</div>
 			</div>
 			<div id="text-plant-detail" class="text-xmasgreen">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit.
