@@ -2,11 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./src/style.css" />
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<title>Plant Care</title>
 	</head>
 	<!-- <body class="relative bg-gradient-to-r from-darksage to-lightsage w-screen h-screen m-2"> -->
@@ -25,10 +27,11 @@
         <img src="public/wannabe-palmtree-unsplash.jpg" class="w-1/2 h-1/2 rounded-full"  alt="green plant in white pot">
         <img src="public/xmas-tree-unsplash.jpg" class="w-2/5 h-2/5 rounded-full" alt="green tree in white pot">
         <!-- add plant button -->
-        <div id="button-add-plant" class=" mb-10 flex flex-col items-center">
+        <div id="button-add-plant" onclick="location.href='identify-plant.html'" class=" mb-10 flex flex-col items-center">
           <div class="flex justify-around items-center bg-turtlegreen h-11 w-11 rounded-full mx-2">
             <i class="fa-solid fa-plus text-white text-2xl"></i>
           </div> 
+          <!-- <a href="identify-plant.html" class="font-bold">Add Plant</a> -->
           <div class="font-bold">Add Plant</div>
         </div> 
     </section>
@@ -100,7 +103,7 @@
 		</section>
     <!-- QUICK FIX: WHAT IS A SMARTER SOLUTION???? -->
 		<footer>
-    <div class="absolute top-[710px] bg-white w-full z-20 rounded-t-3xl border-solid border-black border-4 border-opacity-10">
+    <div class="absolute bg-white w-full z-20 rounded-t-3xl border-solid border-black border-4 border-opacity-10">
       <div class="flex justify-around align-middle">
       <!-- icon home -->
         <div class="flex justify-around items-center bg-white h-11 w-11 m-10">
