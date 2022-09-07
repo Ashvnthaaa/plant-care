@@ -25,9 +25,19 @@
 			<!-- plant img -->
 			<div>
 				<div id="plant img" class="bg-hero w-32 h-32 bg-contain rounded-br-3xl">
-					<div id="humidity">
-						<p>64%</p>
-						<p>Humidity</p>
+					<div
+						id="humidity"
+						class="flex justify-around items-center bg-white bg-opacity-20 w-14 h-8 rounded-full"
+					>
+						<div
+							class="flex justify-around items-center bg-white h-11 w-11 rounded-full mx-2"
+						>
+							<i class="fa-solid fa-camera text-xl text-xmasgreen"></i>
+						</div>
+						<div class="flex flex-col">
+							<p class="text-xl text-xmasgreen">64%</p>
+							<p class="text-xl text-xmasgreen font-thin">Humidity</p>
+						</div>
 					</div>
 					<div id="height"></div>
 					<div id="diameter"></div>
@@ -39,14 +49,30 @@
 			id="plant-detail-container"
 			class="flex flex-col bg-lightgrey w-96 -h-auto"
 		>
-			<div></div>
-			<div></div>
-			<div></div>
-			<!-- title -->
-			<!-- hashtags -->
-			<!-- text -->
+			<div
+				id="title-plant-detail"
+				class="text-xmasgreen font-bold text-xl"
+			></div>
+			<div id="hashtags-plant-detail" class="text-xmasgreen font-thin">
+				<div id="hash-1">Indoor</div>
+				<div id="hash-2">Garden</div>
+				<div id="hash-3">Office</div>
+				<div id="hash-4">Pet friendly</div>
+				<div id="hash-5">Air Purifier</div>
+			</div>
+			<div id="text-plant-detail" class="text-xmasgreen">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
 		</section>
-		<footer>
+		<footer
+			class="flex justify-center align-middle w-96 h-auto bg-lightgrey rounded-b-3xl"
+		>
+			<div
+				id="btn-plant-detail"
+				class="flex justify-center items-center bg-xmasgreen w-72 h-14 rounded-full mb-16"
+			>
+				<p class="text-white font-light text-center">Add To My Plant</p>
+			</div>
 			<!-- button -->
 		</footer>
 	</body>
